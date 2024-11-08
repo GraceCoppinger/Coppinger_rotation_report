@@ -12,6 +12,6 @@ Pipeline for the Lonestar_Metatranscriptome and further anaylsis
 -[SAMTools](https://www.htslib.org/)
 
 -[StringTie](https://github.com/gpertea/stringtie)
-# Will result with counts (which represent how many times the reads map to the genome).
+#Will result with counts (which represent how many times the reads map to the genome).
 
 -[gffcompare](https://ccb.jhu.edu/software/stringtie/gffcompare.shtml)
