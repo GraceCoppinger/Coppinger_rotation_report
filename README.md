@@ -18,6 +18,6 @@ Map the reads back to the referenc genome
 -[SAMTools](https://www.htslib.org/) 
 Fasta to BAM and SAM files for StringTie
 
--[StringTie](https://github.com/gpertea/stringtie)
+-[FeatureCounts](https://rnnh.github.io/bioinfo-notebook/docs/featureCounts.html)
 Will result with counts (which represent how many times the reads map to the genome).
 
