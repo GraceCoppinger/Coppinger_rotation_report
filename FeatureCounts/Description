@@ -1,0 +1,24 @@
+#Feature counts
+#Install a software called subread in the same conda enviorment as fastqc, hisat2, and SAMtools
+conda install bioconda::subread
+# Here is the github link to use feature counts
+# https://rnnh.github.io/bioinfo-notebook/docs/featureCounts.html
+
+#Make our script
+nano featurecounts.sh
+
+#!/bin/bash
+#Per sample run the following
+featureCounts -a PATH/TO/GENOME/GTF/FILE/FROM/NCBI -o Name_for_featurecounts_output_file.txt You_bam_file_conversion_from_samtools.bam
+
+
+#Feature counts example
+#!/bin/bash
+#S2
+featureCounts -a /mnt/pathogen2/gcoppinger/Amblyomma_americanum_genome/Amblyomma_americanum.gtf -o M790_I9970_RNA_Tickpool_216_S2_output.txt M790_I9970_RNA_Tickpool_216_S2.bam
+#S3
+featureCounts -a /mnt/pathogen2/gcoppinger/Amblyomma_americanum_genome/Amblyomma_americanum.gtf -o M790_I9971_RNA_Tickpool_280_S3_output.txt /mnt/pathogen2/gcoppinger/03_HiSat2_pool/M790_I9971_RNA_Tickpool_280_S3.bam
+#S4
+featureCounts -a /mnt/pathogen2/gcoppinger/Amblyomma_americanum_genome/Amblyomma_americanum.gtf -o M790_I9972_RNA_Tickpool_287_S4_output.txt /mnt/pathogen2/gcoppinger/03_HiSat2_pool/M790_I9972_RNA_Tickpool_287_S4.bam
+#S5
+featureCounts -a /mnt/pathogen2/gcoppinger/Amblyomma_americanum_genome/Amblyomma_americanum.gtf -o M790_I9973_RNA_Tickpool_311_S5_output.txt /mnt/pathogen2/gcoppinger/03_HiSat2_pool/M790_I9973_RNA_Tickpool_311_S5.bam
