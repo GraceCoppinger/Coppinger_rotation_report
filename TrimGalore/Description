@@ -6,7 +6,7 @@ conda activate trim_tick
 conda install bioconda::trim-galore 
 # For my parameters I mostly kept the defaults
 # Length I changed to 120 as that is where the quality started to drop a little in fastqc (3/4 files) 
-# Make sure to check your own fastqc files to see where your quality begins to drop. I will attach an image called "Visualizing Fastqc" under the folder "Fastqc" in this repoistory.
+# Make sure to check your own fastqc files to see where your quality begins to drop. I will attach an image called "Trimming_report" under the folder "Fastqc" in this repoistory.
 
 nano trimgalore.sh
 # TrimGalore Script Start #
