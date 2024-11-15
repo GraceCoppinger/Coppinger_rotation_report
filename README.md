@@ -4,7 +4,7 @@ Pipeline for the Lonestar_Metatranscriptome and further anaylsis
 #Initial pipeline plan
 # Based on the paper "An intuitive guide to processing RNA-seq reads" by Asaduzzaman Prodhan and "ToxCodAn" by Rhett M. Rautsaw
 The intention of this pipeline to clean pooled lonestar tick samples, align them to a genome, and identify the most abundant reads for removal. 
-Read the paper "Metatranscriptomic investigation of single Ixodes pacificus ticks reveals diverse microbes, viruses, and novel mRNA-like endogenous viral elements" for background and future directions behind this pipeline. 
+Read the paper "Metatranscriptomic investigation of single Ixodes pacificus ticks reveals diverse microbes, viruses, and novel mRNA-like endogenous viral elements" by Calla Martyn et al., for background and future directions behind this pipeline. 
 
 Below I will list each of the software I used in Chronilogical order. Each Software will have a designated folder where you can find example scripts and information on the software. 
 
