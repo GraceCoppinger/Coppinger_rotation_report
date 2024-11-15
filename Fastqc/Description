@@ -14,14 +14,32 @@ conda deactivate
 conda activate tick
 conda install bioconda::fastqc
 
+#Lets make a list of all our samples:
+nano list
+#This command creaes a text file which you can write your commands in
+Sample_1
+Sample_2
+Sample_3
+Sample_4
+#We can call on this list in future for loops
+
 # Now it is time to make the bash script
 nano NAME_OF_SCRIPT.sh
-#This command creaes a text file which you can write your commands in
 
+#Lets write our script!
+#!/bin/bash
+cd PATH/TO/YOUR/RAW/DATA || exit 1
+for i in $(cat PATH/TO/YOUR/LIST); do fastqc "${i}.fastq.gz" -t 4; done
+#The command ${i} will call on each line (sample id) in your list file you created
+#The parameter -t 4 represents the number of cores to use (in this case 4 is pretty standard)
+
+
+#Example my script I ran
 #!/bin/bash
 cd /mnt/pathogen2/gcoppinger/00_raw_data_pool || exit 1
 for i in $(cat /mnt/pathogen2/gcoppinger/ticklist); do fastqc "${i}.fastq.gz" -t 4; done
 
 # FastQC Script End #
-#How to run
+
+#How to run from the command line
 ./fastqc.sh
