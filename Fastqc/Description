@@ -1,1 +1,27 @@
 #Description of fastqc and example scripts
+# First you need to install software in a conda enviorment:
+# To install conda: 
+wget https://repo.anaconda.com/archive/Anaconda3-latest-Linux-x86_64.sh
+bash Anaconda3-latest-Linux-x86_64.sh
+# You might need to restart the shell after installing conda
+
+# Create a conda enviorment:
+conda create -n tick
+conda activate tick
+conda deactivate 
+
+#Install necessary software for fastqc:
+conda activate tick
+conda install bioconda::fastqc
+
+# Now it is time to make the bash script
+nano NAME_OF_SCRIPT.sh
+#This command creaes a text file which you can write your commands in
+
+#!/bin/bash
+cd /mnt/pathogen2/gcoppinger/00_raw_data_pool || exit 1
+for i in $(cat /mnt/pathogen2/gcoppinger/ticklist); do fastqc "${i}.fastq.gz" -t 4; done
+
+# FastQC Script End #
+#How to run
+./fastqc.sh
