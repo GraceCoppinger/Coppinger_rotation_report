@@ -12,9 +12,6 @@ Quality check. Run before and after trim
 -[Trimgalore](https://github.com/FelixKrueger/TrimGalore) 
 Improve reads by removing low quality reads. Dont forget to run Fastqc after
 
--[Pear](https://cme.h-its.org/exelixis/web/software/pear/) 
-Merge forward and reverse reads together. Can skip this step, but will make life easier in the long run.
-
 -[HISAT2](https://daehwankimlab.github.io/hisat2/) 
 Map the reads back to the referenc genome
 
