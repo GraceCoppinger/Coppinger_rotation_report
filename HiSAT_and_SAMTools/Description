@@ -2,10 +2,25 @@
 conda install bioconda::hisat2
 conda install bioconda::samtools
 
+#When running hisat you need to choose a genome from ncbi, I would make sure to obtain a .fna .gff and .gtf file if it is available
+
 #Write our script
 nano hisat.sh
 
-#HiSAT2#
+#!/bin/bash
+
+cd /mnt/pathogen2/gcoppinger/Amblyomma_americanum_genome
+#HISAT2 build index 
+hisat2-build genome_file_from_ncbi.fna index_name_for_genome_you_pick
+#Run hisat
+hisat2 -q --rna-strandness R -x NEED/PATH/TO/GENOME/INDEX -1 FASTQ/FILE/AFTER/TRIM/R1.fastq -2 FASTQ/FILE/AFTER/TRIM/R2.fastq -S Name_of_output_file_you_pick.sam 
+
+#Should take about an hour to run per sample
+#Now we need to convert our .sam to .bam for further analysis
+samtools view -b -o MName_of_future_output_file_you_pick.bam  Name_of_hisat_output_file_you_pick.sam 
+
+
+#HiSAT2 and SAMtools example#
 #!/bin/bash
 
 cd /mnt/pathogen2/gcoppinger/Amblyomma_americanum_genome
@@ -23,5 +38,3 @@ samtools view -b -o M790_I9970_RNA_Tickpool_216_S2.bam M790_I9970_RNA_Tickpool_2
 samtools view -b -o M790_I9971_RNA_Tickpool_280_S3.bam M790_I9971_RNA_Tickpool_280_S3.sam
 samtools view -b -o  M790_I9972_RNA_Tickpool_287_S4.bam M790_I9972_RNA_Tickpool_287_S4.sam
 samtools view -b -o M790_I9973_RNA_Tickpool_311_S5.bam M790_I9973_RNA_Tickpool_311_S5.sam 
-
-All sam and bam file were moved to /mnt/pathogen2/gcoppinger/03_HiSat2_pool
