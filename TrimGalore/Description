@@ -1,0 +1,32 @@
+# TrimGalore #
+# Had to install in a new conda enviorment becuase trimgalore was competing with fastqc
+conda create -n trim_tick
+conda activate trim_tick
+#Install your package
+conda install bioconda::trim-galore 
+# For my parameters I mostly kept the defaults
+# Length I changed to 120 as that is where the quality started to drop a little in fastqc (3/4 files) 
+# Make sure to check your own fastqc files to see where your quality begins to drop. I will attach an image called "Visualizing Fastqc" under the folder "Fastqc" in this repoistory.
+
+nano trimgalore.sh
+# TrimGalore Script Start #
+#!/bin/bash
+
+cd PATH/TO/RAW/DATA
+
+#You can use a for loop like I did in fastqc script. But I only had four samples so I wrote an individual line for each of them.
+trim_galore --paired --phred33 --length 120 -q 20 --stringency 1 -e 0.1 -o PATH/TO/DIRECTORY/YOU/WANT/YOUR/FILES/TO/OUTPUT PATH/TO/INDIVIDUAL/RAW/DATA/FILE/R1 PATH/TO/INDIVIDUAL/RAW/DATA/FILE/R2 > NAME/YOUR/OUTPUT/FILE_tg.log
+
+# TrimGalore Script End #
+
+
+# TrimGalore Example Script Start #
+#!/bin/bash
+
+cd /mnt/pathogen2/gcoppinger/00_raw_data_pool
+
+#trim_galore --paired --phred33 --length 120 -q 20 --stringency 1 -e 0.1 -o /mnt/pathogen2/gcoppinger/02_trimgalore_pool /mnt/pathogen2/gcoppinger/00_raw_data_pool/M790_I9970_RNA_Tickpool_216_UDP0013_CTTGCCATTA_ATCACGAAGG_S2_R1_001.fastq.gz /mnt/pathogen2/gcoppinger/00_raw_data_pool/M790_I9970_RNA_Tickpool_216_UDP0013_CTTGCCATTA_ATCACGAAGG_S2_R2_001.fastq.gz > M790_I9970_RNA_Tickpool_216_UDP0013_CTTGCCATTA_ATCACGAAGG_S2_tg.log
+#trim_galore --paired --phred33 --length 120 -q 20 --stringency 1 -e 0.1 -o /mnt/pathogen2/gcoppinger/02_trimgalore_pool /mnt/pathogen2/gcoppinger/00_raw_data_pool/M790_I9971_RNA_Tickpool_280_UDP0014_GAAGCGGCAC_CGGCTCTACT_S3_R1_001.fastq.gz /mnt/pathogen2/gcoppinger/00_raw_data_pool/M790_I9971_RNA_Tickpool_280_UDP0014_GAAGCGGCAC_CGGCTCTACT_S3_R2_001.fastq.gz > M790_I9971_RNA_Tickpool_280_UDP0014_GAAGCGGCAC_CGGCTCTACT_S3_tg.log
+#trim_galore --paired --phred33 --length 120 -q 20 --stringency 1 -e 0.1 -o /mnt/pathogen2/gcoppinger/02_trimgalore_pool /mnt/pathogen2/gcoppinger/00_raw_data_pool/M790_I9972_RNA_Tickpool_287_UDP0015_TCCATTGCCG_GAATGCACGA_S4_R1_001.fastq.gz /mnt/pathogen2/gcoppinger/00_raw_data_pool/M790_I9972_RNA_Tickpool_287_UDP0015_TCCATTGCCG_GAATGCACGA_S4_R2_001.fastq.gz > M790_I9972_RNA_Tickpool_287_UDP0015_TCCATTGCCG_GAATGCACGA_S4_tg.log
+trim_galore --paired --phred33 --length 120 -q 20 --stringency 1 -e 0.1 -o /mnt/pathogen2/gcoppinger/02_trimgalore_pool /mnt/pathogen2/gcoppinger/00_raw_data_pool/M790_I9973_RNA_Tickpool_311_UDP0016_CGGTTACGGC_AAGACTATAG_S5_R1_001.fastq.gz /mnt/pathogen2/gcoppinger/00_raw_data_pool/M790_I9973_RNA_Tickpool_311_UDP0016_CGGTTACGGC_AAGACTATAG_S5_R2_001.fastq.gz > M790_I9973_RNA_Tickpool_311_UDP0016_CGGTTACGGC_AAGACTATAG_S5_tg.log
+# TrimGalore Script End #
