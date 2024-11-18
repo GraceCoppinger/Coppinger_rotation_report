@@ -27,3 +27,14 @@ featureCounts -a /mnt/pathogen2/gcoppinger/Amblyomma_americanum_genome/Amblyomma
 
 
 #Add - for overlaps and add -p for paired end
+
+Play around with the parameters
+Why feature counts not finding the features? -Try and use the gff file instead of gtf
+
+Some niche parameter for hisat2?
+
+Rerun bam file:
+samtools view -S -b M790_I9970_RNA_Tickpool_216_S2.bam | samtools sort > test.bam
+
+Make some line and histograms
+
