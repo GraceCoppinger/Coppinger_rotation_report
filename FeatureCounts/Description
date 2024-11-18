@@ -26,8 +26,6 @@ featureCounts -a /mnt/pathogen2/gcoppinger/Amblyomma_americanum_genome/Amblyomma
 featureCounts -a /mnt/pathogen2/gcoppinger/Amblyomma_americanum_genome/Amblyomma_americanum.gtf -o M790_I9973_RNA_Tickpool_311_S5_output.txt /mnt/pathogen2/gcoppinger/03_HiSat2_pool/M790_I9973_RNA_Tickpool_311_S5.bam
 
 
-#Add - for overlaps and add -p for paired end
-
 Play around with the parameters
 Why feature counts not finding the features? -Try and use the gff file instead of gtf
 
@@ -39,3 +37,6 @@ samtools index test.bam test.bam.bai
 
 Make some line and histograms
 
+
+Current working feature counts:
+featureCounts -T 8 -O -M -F GFF -p -t gene,exon,CDS -g ID -s 0 -a /mnt/pathogen2/gcoppinger/Amblyomma_americanum_genome/Amblyomma_americanum.gff -o M790_I9970_RNA_Tickpool_216_S2_output.txt /mnt/pathogen2/gcoppinger/03_HiSat2_pool/M790_I9970_RNA_Tickpool_216_S2_sort.bam
