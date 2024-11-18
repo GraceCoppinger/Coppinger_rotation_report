@@ -16,6 +16,8 @@ featureCounts -a PATH/TO/GENOME/GTF/FILE/FROM/NCBI -o Name_for_featurecounts_out
 #!/bin/bash
 #S2
 featureCounts -T 8 -t gene -g gene_id -p --countPairedReads -a /mnt/pathogen2/gcoppinger/Amblyomma_americanum_genome/Amblyomma_americanum.gtf -o M790_I9970_RNA_Tickpool_216_S2_output.txt M790_I9970_RNA_Tickpool_216_S2.bam
+featureCounts -T 8 -t gene -g gene_id -p --countReadPairs -s 2 -a /mnt/pathogen2/gcoppinger/Amblyomma_americanum_genome/Amblyomma_americanum.gtf -o M790_I9970_RNA_Tickpool_216_S2_output.txt M790_I9970_RNA_Tickpool_216_S2.bam
+
 #S3
 featureCounts -a /mnt/pathogen2/gcoppinger/Amblyomma_americanum_genome/Amblyomma_americanum.gtf -o M790_I9971_RNA_Tickpool_280_S3_output.txt /mnt/pathogen2/gcoppinger/03_HiSat2_pool/M790_I9971_RNA_Tickpool_280_S3.bam
 #S4
