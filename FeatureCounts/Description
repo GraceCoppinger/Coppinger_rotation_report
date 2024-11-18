@@ -35,6 +35,7 @@ Some niche parameter for hisat2?
 
 Rerun bam file:
 samtools view -S -b M790_I9970_RNA_Tickpool_216_S2.bam | samtools sort > test.bam
+samtools index test.bam test.bam.bai
 
 Make some line and histograms
 
