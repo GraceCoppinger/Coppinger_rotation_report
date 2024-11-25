@@ -1,1 +1,15 @@
-Blank
+For simplicity I put all the final figures in a power point titled "Jacco_rotation_report"
+
+For reporting the following figures are as follows:
+# Quality analysis
+- Trimming report
+- HiSAT2 Alignment
+- FeatureCounts summary files (include arcadia and Amanda .gff anaylsis)
+
+# Bar charts and Pie charts
+- Pie chart ~ Showcases the content within the transcriptome
+- rRNA Bar chart ~ Of the rRNA contnent (90%) what type of rRNA is the highest
+- Scaffold Bar chart ~ Which scaffolds contribute to the highest read counts
+
+# IGV image
+- Where does the scaffold with the highest read align to the genome.
