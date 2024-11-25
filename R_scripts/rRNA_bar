@@ -1,0 +1,110 @@
+library(ggplot2)
+  library(patchwork) 
+  # Load your data from CSV
+  rna_tick1 <- read.csv("/Users/gracecoppinger/Desktop/Jacco/M790_I9970_rRNA_output.csv")
+  
+  # Rescale the percent_coverage so that all the scaffold percentages sum to 100
+  rna_tick1$reads <- rna_tick1$reads / sum(rna_tick1$reads) * 100
+  
+  # Reorder the scaffold factor based on percent_coverage
+  rna_tick1$Geneid <- factor(rna_tick1$Geneid, levels = rna_tick1$Geneid[order(rna_tick1$reads)])
+  
+  # Add a dummy column to make sure all the data goes into one bar
+  rna_tick1$Total <- "Total"
+  
+  # Create a stacked bar plot with percent coverage on the x-axis
+  rna_tick1 <- ggplot(rna_tick1, aes(x = Total, y = reads, fill = Geneid)) +
+    geom_bar(stat = "identity") +
+    labs(
+      title = "Single Stacked Bar of Percent Coverage by Scaffold",
+      x = "All Scaffolds",
+      y = "Percent Coverage",
+      fill = "Scaffold"
+    ) +
+    theme_minimal() +
+    scale_fill_brewer(palette = "Set3")
+  
+  ##############################################################################
+  
+  # Load your data from CSV
+  rna_tick2 <- read.csv("/Users/gracecoppinger/Desktop/Jacco/M790_I9971_rRNA_output.csv")
+  
+  # Rescale the percent_coverage so that all the scaffold percentages sum to 100
+  rna_tick2$reads <- rna_tick2$reads / sum(rna_tick2$reads) * 100
+  
+  # Reorder the scaffold factor based on percent_coverage
+  rna_tick2$Geneid <- factor(rna_tick2$Geneid, levels = rna_tick2$Geneid[order(rna_tick2$reads)])
+  
+  # Add a dummy column to make sure all the data goes into one bar
+  rna_tick2$Total <- "Total"
+  
+  # Create a stacked bar plot with percent coverage on the x-axis
+  rna_tick2 <- ggplot(rna_tick2, aes(x = Total, y = reads, fill = Geneid)) +
+    geom_bar(stat = "identity") +
+    labs(
+      title = "Single Stacked Bar of Percent Coverage by Scaffold",
+      x = "All Scaffolds",
+      y = "Percent Coverage",
+      fill = "Scaffold"
+    ) +
+    theme_minimal() +
+    scale_fill_brewer(palette = "Set3")
+  
+  ################################################################################################
+  # Load your data from CSV
+  rna_tick3 <- read.csv("/Users/gracecoppinger/Desktop/Jacco/M790_I9971_rRNA_output.csv")
+  
+  # Rescale the percent_coverage so that all the scaffold percentages sum to 100
+  rna_tick3$reads <- rna_tick3$reads / sum(rna_tick3$reads) * 100
+  
+  # Reorder the scaffold factor based on percent_coverage
+  rna_tick3$Geneid <- factor(rna_tick3$Geneid, levels = rna_tick3$Geneid[order(rna_tick3$reads)])
+  
+  # Add a dummy column to make sure all the data goes into one bar
+  rna_tick3$Total <- "Total"
+  
+  # Create a stacked bar plot with percent coverage on the x-axis
+  rna_tick3 <- ggplot(rna_tick3, aes(x = Total, y = reads, fill = Geneid)) +
+    geom_bar(stat = "identity") +
+    labs(
+      title = "Single Stacked Bar of Percent Coverage by Scaffold",
+      x = "All Scaffolds",
+      y = "Percent Coverage",
+      fill = "Scaffold"
+    ) +
+    theme_minimal() +
+    scale_fill_brewer(palette = "Set3")
+  ################################################################################################
+  
+  # Load your data from CSV
+  rna_tick4 <- read.csv("/Users/gracecoppinger/Desktop/Jacco/M790_I9971_rRNA_output.csv")
+  
+  # Rescale the percent_coverage so that all the scaffold percentages sum to 100
+  rna_tick4$reads <- rna_tick4$reads / sum(rna_tick4$reads) * 100
+  
+  # Reorder the scaffold factor based on percent_coverage
+  rna_tick4$Geneid <- factor(rna_tick4$Geneid, levels = rna_tick4$Geneid[order(rna_tick4$reads)])
+  
+  # Add a dummy column to make sure all the data goes into one bar
+  rna_tick4$Total <- "Total"
+  
+  # Create a stacked bar plot with percent coverage on the x-axis
+  rna_tick4 <- ggplot(rna_tick4, aes(x = Total, y = reads, fill = Geneid)) +
+    geom_bar(stat = "identity") +
+    labs(
+      title = "Single Stacked Bar of Percent Coverage by Scaffold",
+      x = "All Scaffolds",
+      y = "Percent Coverage",
+      fill = "Scaffold"
+    ) +
+    theme_minimal() +
+    scale_fill_brewer(palette = "Set3")
+  ################################################################################################
+  # Combine the plots into a single figure using patchwork
+  combined_plot <- (rna_tick1 + rna_tick2 + rna_tick3 + rna_tick4) + 
+    plot_layout(ncol = 4) & 
+    theme(legend.position = "bottom")  # Position the legend at the bottom for the final plot
+  
+  # Display the combined plot with one legend
+  print(combined_plot)
+  
