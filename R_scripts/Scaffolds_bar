@@ -1,0 +1,119 @@
+library(ggplot2)
+library(patchwork)
+
+# Load your data from CSV
+tick1 <- read.csv("/Users/gracecoppinger/Desktop/TopTen_M790_I9970.csv")
+
+# Rescale the percent_coverage so that all the scaffold percentages sum to 100
+tick1$reads <- tick1$reads / sum(tick1$reads) * 100
+
+# Reorder the scaffold factor based on percent_coverage
+tick1$scaffold <- factor(tick1$scaffold, levels = tick1$scaffold[order(tick1$reads)])
+
+# Add a dummy column to make sure all the data goes into one bar
+tick1$Total <- "Total"
+
+# Create a stacked bar plot with percent coverage on the x-axis
+tickplot1 <- ggplot(tick1, aes(x = Total, y = reads, fill = scaffold)) +
+  geom_bar(stat = "identity") +
+  labs(
+    title = "Single Stacked Bar of Percent Coverage by Scaffold",
+    x = "All Scaffolds",
+    y = "Percent Coverage",
+    fill = "Scaffold"
+  ) +
+  theme_minimal() +
+  scale_fill_brewer(palette = "Set3")
+
+# Display the plot
+tickplot1
+#########################################################################################################################################################
+# Load your data from CSV
+tick2 <- read.csv("/Users/gracecoppinger/Desktop/TopTen_M790_I9971.csv")
+
+# Rescale the percent_coverage so that all the scaffold percentages sum to 100
+tick2$reads <- tick2$reads / sum(tick2$reads) * 100
+
+# Reorder the scaffold factor based on percent_coverage
+tick2$scaffold <- factor(tick2$scaffold, levels = tick2$scaffold[order(tick2$reads)])
+
+# Add a dummy column to make sure all the data goes into one bar
+tick2$Total <- "Total"
+
+# Create a stacked bar plot with percent coverage on the x-axis
+tickplot2 <- ggplot(tick2, aes(x = Total, y = reads, fill = scaffold)) +
+  geom_bar(stat = "identity") +
+  labs(
+    title = "Single Stacked Bar of Percent Coverage by Scaffold",
+    x = "All Scaffolds",
+    y = "Percent Coverage",
+    fill = "Scaffold"
+  ) +
+  theme_minimal() +
+  scale_fill_brewer(palette = "Set3")
+
+# Display the plot
+tickplot2
+#########################################################################################################################################################
+# Load your data from CSV
+tick3 <- read.csv("/Users/gracecoppinger/Desktop/TopTen_M790_I9972.csv")
+
+# Rescale the percent_coverage so that all the scaffold percentages sum to 100
+tick3$reads <- tick3$reads / sum(tick3$reads) * 100
+
+# Reorder the scaffold factor based on percent_coverage
+tick3$scaffold <- factor(tick3$scaffold, levels = tick3$scaffold[order(tick3$reads)])
+
+# Add a dummy column to make sure all the data goes into one bar
+tick3$Total <- "Total"
+
+# Create a stacked bar plot with percent coverage on the x-axis
+tickplot3 <- ggplot(tick3, aes(x = Total, y = reads, fill = scaffold)) +
+  geom_bar(stat = "identity") +
+  labs(
+    title = "Single Stacked Bar of Percent Coverage by Scaffold",
+    x = "All Scaffolds",
+    y = "Percent Coverage",
+    fill = "Scaffold"
+  ) +
+  theme_minimal() +
+  scale_fill_brewer(palette = "Set3")
+
+# Display the plot
+tickplot3
+#########################################################################################################################################################
+# Load your data from CSV
+tick4 <- read.csv("/Users/gracecoppinger/Desktop/TopTen_M790_I9973.csv")
+
+# Rescale the percent_coverage so that all the scaffold percentages sum to 100
+tick4$reads <- tick4$reads / sum(tick4$reads) * 100
+
+# Reorder the scaffold factor based on percent_coverage
+tick4$scaffold <- factor(tick4$scaffold, levels = tick4$scaffold[order(tick4$reads)])
+
+# Add a dummy column to make sure all the data goes into one bar
+tick4$Total <- "Total"
+
+# Create a stacked bar plot with percent coverage on the x-axis
+tickplot4 <- ggplot(tick4, aes(x = Total, y = reads, fill = scaffold)) +
+  geom_bar(stat = "identity") +
+  labs(
+    title = "Single Stacked Bar of Percent Coverage by Scaffold",
+    x = "All Scaffolds",
+    y = "Percent Coverage",
+    fill = "Scaffold"
+  ) +
+  theme_minimal() +
+  scale_fill_brewer(palette = "Set3")
+
+# Display the plot
+tickplot4
+
+################################################################################################
+# Combine the plots into a single figure using patchwork
+combined_plot <- (tickplot1 + tickplot2 + tickplot3 + tickplot4) + 
+  plot_layout(ncol = 4) & 
+  theme(legend.position = "bottom")  # Position the legend at the bottom for the final plot
+
+# Display the combined plot with one legend
+print(combined_plot)
