@@ -34,7 +34,14 @@ hisat2 -q --rna-strandness R -x NEED/PATH/TO/A_americanum -1 M790_I9972_RNA_Tick
 hisat2 -q --rna-strandness R -x NEED/PATH/TO/A_americanum -1 M790_I9973_RNA_Tickpool_311_UDP0016_CGGTTACGGC_AAGACTATAG_S5_R1_trim.fastq -2 M790_I9973_RNA_Tickpool_311_UDP0016_CGGTTACGGC_AAGACTATAG_S5_R2_trim.fastq -S M790_I9973_RNA_Tickpool_311_S5.sam 
 
 #Convert to .bam using samtools
-samtools view -b -o M790_I9970_RNA_Tickpool_216_S2.bam M790_I9970_RNA_Tickpool_216_S2.sam
-samtools view -b -o M790_I9971_RNA_Tickpool_280_S3.bam M790_I9971_RNA_Tickpool_280_S3.sam
-samtools view -b -o  M790_I9972_RNA_Tickpool_287_S4.bam M790_I9972_RNA_Tickpool_287_S4.sam
-samtools view -b -o M790_I9973_RNA_Tickpool_311_S5.bam M790_I9973_RNA_Tickpool_311_S5.sam 
+samtools view -S -b M790_I9970_RNA_Tickpool_216_S2.bam | samtools sort >  M790_I9970.bam
+samtools index  M790_I9970.bam  M790_I9970.bam.bai
+
+samtools view -S -b M790_I9971_RNA_Tickpool_280_S2.bam | samtools sort >  M790_I9971.bam
+samtools index  M790_I9971.bam  M790_I9971.bam.bai
+
+samtools view -S -b M790_I9972_RNA_Tickpool_287_S2.bam | samtools sort >  M790_I9972.bam
+samtools index  M790_I9972.bam  M790_I9972.bam.bai
+
+samtools view -S -b M790_I9973_RNA_Tickpool_311_S2.bam | samtools sort >  M790_I9973.bam
+samtools index  M790_I9973.bam  M790_I9973.bam.bai
