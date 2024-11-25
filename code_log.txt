@@ -1,0 +1,159 @@
+######################
+#       Nov 11       #
+######################
+#Set up a folder for each software I plan to run and the products from those runs in their respective folder:
+#Setup:
+00_raw_data_pool
+01_fastqc_pool
+02_trimgalore_pool
+03_HiSat2_pool
+04_FeatureCounts
+05_Final_pool
+scripts_pool
+
+# Made a list called ticklist for runnign for loops and parallel
+M790_I9970_RNA_Tickpool_216_UDP0013_CTTGCCATTA_ATCACGAAGG_S2_R1
+M790_I9970_RNA_Tickpool_216_UDP0013_CTTGCCATTA_ATCACGAAGG_S2_R2
+M790_I9971_RNA_Tickpool_280_UDP0014_GAAGCGGCAC_CGGCTCTACT_S3_R1
+M790_I9971_RNA_Tickpool_280_UDP0014_GAAGCGGCAC_CGGCTCTACT_S3_R2
+M790_I9972_RNA_Tickpool_287_UDP0015_TCCATTGCCG_GAATGCACGA_S4_R1
+M790_I9972_RNA_Tickpool_287_UDP0015_TCCATTGCCG_GAATGCACGA_S4_R2
+M790_I9973_RNA_Tickpool_311_UDP0016_CGGTTACGGC_AAGACTATAG_S5_R1
+M790_I9973_RNA_Tickpool_311_UDP0016_CGGTTACGGC_AAGACTATAG_S5_R2
+
+#Current plan is to use conda env.... waiting till meeting with Amanda 
+#Reccomended conda installation
+
+#Going to create a conda enviorment
+conda create -n tick
+conda activate tick
+conda deactivate 
+
+#For each software I will add it to the conda enviorment in its individual section
+
+# FastQC Script Start #
+conda install bioconda::fastqc
+
+#!/bin/bash
+cd /mnt/pathogen2/gcoppinger/00_raw_data_pool || exit 1
+for i in $(cat /mnt/pathogen2/gcoppinger/ticklist); do fastqc "${i}.fastq.gz" -t 4; done
+
+# FastQC Script End #
+#How to run
+./fastqc.sh
+#RAN ON NOV 11
+all of the files are in /mnt/pathogen2/gcoppinger/01_fastqc_pool/before_trim
+
+######################
+#       Nov 12       #
+######################
+# TrimGalore #
+# Had to install in a new conda enviorment called "trim_tick"
+conda activate trim_tick
+conda install bioconda::trim-galore 
+# For my parameters I mostly kept the defaults
+# Length I changed to 120 as that is where the quality started to drop a little in fastqc (3/4 files)
+
+# TrimGalore Script Start #
+#!/bin/bash
+
+cd /mnt/pathogen2/gcoppinger/00_raw_data_pool
+
+trim_galore --paired --phred33 --length 120 -q 20 --stringency 1 -e 0.1 -o /mnt/pathogen2/gcoppinger/02_trimgalore_pool /mnt/pathogen2/gcoppinger/00_raw_data_pool/M790_I9970_RNA_Tickpool_216_UDP0013_CTTGCCATTA_ATCACGAAGG_S2_R1_001.fastq.gz /mnt/pathogen2/gcoppinger/00_raw_data_pool/M790_I9970_RNA_Tickpool_216_UDP0013_CTTGCCATTA_ATCACGAAGG_S2_R2_001.fastq.gz > M790_I9970_RNA_Tickpool_216_UDP0013_CTTGCCATTA_ATCACGAAGG_S2_tg.log
+trim_galore --paired --phred33 --length 120 -q 20 --stringency 1 -e 0.1 -o /mnt/pathogen2/gcoppinger/02_trimgalore_pool /mnt/pathogen2/gcoppinger/00_raw_data_pool/M790_I9971_RNA_Tickpool_280_UDP0014_GAAGCGGCAC_CGGCTCTACT_S3_R1_001.fastq.gz /mnt/pathogen2/gcoppinger/00_raw_data_pool/M790_I9971_RNA_Tickpool_280_UDP0014_GAAGCGGCAC_CGGCTCTACT_S3_R2_001.fastq.gz > M790_I9971_RNA_Tickpool_280_UDP0014_GAAGCGGCAC_CGGCTCTACT_S3_tg.log
+trim_galore --paired --phred33 --length 120 -q 20 --stringency 1 -e 0.1 -o /mnt/pathogen2/gcoppinger/02_trimgalore_pool /mnt/pathogen2/gcoppinger/00_raw_data_pool/M790_I9972_RNA_Tickpool_287_UDP0015_TCCATTGCCG_GAATGCACGA_S4_R1_001.fastq.gz /mnt/pathogen2/gcoppinger/00_raw_data_pool/M790_I9972_RNA_Tickpool_287_UDP0015_TCCATTGCCG_GAATGCACGA_S4_R2_001.fastq.gz > M790_I9972_RNA_Tickpool_287_UDP0015_TCCATTGCCG_GAATGCACGA_S4_tg.log
+trim_galore --paired --phred33 --length 120 -q 20 --stringency 1 -e 0.1 -o /mnt/pathogen2/gcoppinger/02_trimgalore_pool /mnt/pathogen2/gcoppinger/00_raw_data_pool/M790_I9973_RNA_Tickpool_311_UDP0016_CGGTTACGGC_AAGACTATAG_S5_R1_001.fastq.gz /mnt/pathogen2/gcoppinger/00_raw_data_pool/M790_I9973_RNA_Tickpool_311_UDP0016_CGGTTACGGC_AAGACTATAG_S5_R2_001.fastq.gz > M790_I9973_RNA_Tickpool_311_UDP0016_CGGTTACGGC_AAGACTATAG_S5_tg.log
+# TrimGalore Script End #
+
+#manual change the out put file (${i}.fq.gz) to ${i}_trim.fastq.gz
+
+# FastQC Script Start #
+# Running FastQC on trimmed files
+# Manually changed "ticklist" to match the new output files
+cd /mnt/pathogen2/gcoppinger/02_trimgalore_pool || exit 1
+for i in $(cat /mnt/pathogen2/gcoppinger/ticklist); do fastqc "${i}.fastq.gz" -t 4; done
+# FastQC Script End #
+Moved all of the fastqc run to /mnt/pathogen2/gcoppinger/01_fastqc_pool/after_trim
+
+
+######################
+#       Nov 13       #
+######################
+#Putting hisat2 and samtools in the enviorment "tick"
+conda install bioconda::hisat2
+conda install bioconda::samtools
+#HiSAT2#
+#!/bin/bash
+
+cd /mnt/pathogen2/gcoppinger/Amblyomma_americanum_genome
+#HISAT2 build index 
+hisat2-build Amblyomma_americanum.fna A_americanum
+
+#Hisat commands go here
+hisat2 -q --rna-strandness R -x NEED/PATH/TO/A_americanum -1 M790_I9970_RNA_Tickpool_216_UDP0013_CTTGCCATTA_ATCACGAAGG_S2_R1_trim.fastq -2 M790_I9970_RNA_Tickpool_216_UDP0013_CTTGCCATTA_ATCACGAAGG_S2_R2_trim.fastq -S M790_I9970_RNA_Tickpool_216_S2.sam 
+hisat2 -q --rna-strandness R -x NEED/PATH/TO/A_americanum -1 M790_I9971_RNA_Tickpool_280_UDP0014_GAAGCGGCAC_CGGCTCTACT_S3_R1_trim.fastq -2 M790_I9971_RNA_Tickpool_280_UDP0014_GAAGCGGCAC_CGGCTCTACT_S3_R2_trim.fastq -S M790_I9971_RNA_Tickpool_280_S3.sam 
+hisat2 -q --rna-strandness R -x NEED/PATH/TO/A_americanum -1 M790_I9972_RNA_Tickpool_287_UDP0015_TCCATTGCCG_GAATGCACGA_S4_R1_trim.fastq -2 M790_I9972_RNA_Tickpool_287_UDP0015_TCCATTGCCG_GAATGCACGA_S4_R2_trim.fastq -S M790_I9972_RNA_Tickpool_287_S4.sam 
+hisat2 -q --rna-strandness R -x NEED/PATH/TO/A_americanum -1 M790_I9973_RNA_Tickpool_311_UDP0016_CGGTTACGGC_AAGACTATAG_S5_R1_trim.fastq -2 M790_I9973_RNA_Tickpool_311_UDP0016_CGGTTACGGC_AAGACTATAG_S5_R2_trim.fastq -S M790_I9973_RNA_Tickpool_311_S5.sam 
+
+#Convert to .bam using samtools
+samtools view -b -o M790_I9970_RNA_Tickpool_216_S2.bam M790_I9970_RNA_Tickpool_216_S2.sam
+samtools view -b -o M790_I9971_RNA_Tickpool_280_S3.bam M790_I9971_RNA_Tickpool_280_S3.sam
+samtools view -b -o  M790_I9972_RNA_Tickpool_287_S4.bam M790_I9972_RNA_Tickpool_287_S4.sam
+samtools view -b -o M790_I9973_RNA_Tickpool_311_S5.bam M790_I9973_RNA_Tickpool_311_S5.sam 
+
+samtools view -S -b M790_I9970_RNA_Tickpool_216_S2.bam | samtools sort >  M790_I9970_RNA_Tickpool_216_S2_sort.bam
+samtools index M790_I9970_RNA_Tickpool_216_S2_sort.bam M790_I9970_RNA_Tickpool_216_S2_sort.bam.bai
+
+samtools view -S -b M790_I9971_RNA_Tickpool_280_S3.bam | samtools sort >  M790_I9971_RNA_Tickpool_280_S3_sort.bam
+samtools index M790_I9971_RNA_Tickpool_280_S3_sort.bam M790_I9971_RNA_Tickpool_280_S3_sort.bam.bai
+
+samtools view -S -b M790_I9972_RNA_Tickpool_287_S4.bam | samtools sort >  M790_I9972_RNA_Tickpool_287_S4_sort.bam
+samtools index M790_I9972_RNA_Tickpool_287_S4_sort.bam M790_I9972_RNA_Tickpool_287_S4_sort.bam.bai
+
+samtools view -S -bM790_I9973_RNA_Tickpool_311_S5.bam | samtools sort >  M790_I9973_RNA_Tickpool_311_S5_sort.bam
+samtools index M790_I9973_RNA_Tickpool_311_S5_sort.bam M790_I9973_RNA_Tickpool_311_S5_sort.bam.bai
+
+All sam and bam file were moved to /mnt/pathogen2/gcoppinger/03_HiSat2_pool
+
+
+#Feature counts
+#Putting subread in the enviorment "tick"
+conda install bioconda::subread
+# https://rnnh.github.io/bioinfo-notebook/docs/featureCounts.html
+#S2
+featureCounts -a /mnt/pathogen2/gcoppinger/Amblyomma_americanum_genome/Amblyomma_americanum.gtf -o M790_I9970_RNA_Tickpool_216_S2_output.txt M790_I9970_RNA_Tickpool_216_S2.bam
+featureCounts -T 8  -O -M -p -t exon,gene,CDS -g gene_id  -s 2 -a /mnt/pathogen2/gcoppinger/Amblyomma_americanum_genome/Amblyomma_americanum.gtf  -o M790_I9970_RNA_Tickpool_216_S2_output.txt /mnt/pathogen2/gcoppinger/03_HiSat2_pool/M790_I9970_RNA_Tickpool_216_S2.bam
+
+
+
+#S3
+featureCounts -a /mnt/pathogen2/gcoppinger/Amblyomma_americanum_genome/Amblyomma_americanum.gtf -o M790_I9971_RNA_Tickpool_280_S3_output.txt /mnt/pathogen2/gcoppinger/03_HiSat2_pool/M790_I9971_RNA_Tickpool_280_S3.bam
+#S4
+featureCounts -a /mnt/pathogen2/gcoppinger/Amblyomma_americanum_genome/Amblyomma_americanum.gtf -o M790_I9972_RNA_Tickpool_287_S4_output.txt /mnt/pathogen2/gcoppinger/03_HiSat2_pool/M790_I9972_RNA_Tickpool_287_S4.bam
+#S5
+featureCounts -a /mnt/pathogen2/gcoppinger/Amblyomma_americanum_genome/Amblyomma_americanum.gtf -o M790_I9973_RNA_Tickpool_311_S5_output.txt /mnt/pathogen2/gcoppinger/03_HiSat2_pool/M790_I9973_RNA_Tickpool_311_S5.bam
+
+#All output files were moved to /mnt/pathogen2/gcoppinger/04_FeatureCounts
+
+#Possible youtube to analyze featurecounts https://www.youtube.com/watch?v=KnZ401MlD-Y
+
+######################
+#       Nov 14       #
+######################
+Problem with Feature Counts results...
+-88% multiple alignment
+-Remove? Fix? Help?
+
+######################
+#       Nov 19       #
+######################
+Meeting with Amanda
+
+Sam tools
+samtools idxstats [bam file] > output.txt
+ORDER: Chromosome(scaffold), Length, Reads aligned #Remove the fourth column
+#Identify which scaffolds have the more reads
+#Make the stacked bar graph showcasing which regions of our genome has the most reads #By chromosome
+
+#Possibility: Try and blast these scaffolds
+#Amanda ested M790_I9973
