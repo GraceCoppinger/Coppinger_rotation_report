@@ -1,1 +1,16 @@
-Blank
+#Files needed for rRNA_bar
+M790_I9970_rRNA_output.csv
+M790_I9971_rRNA_output.csv
+M790_I9972_rRNA_output.csv
+M790_I9973_rRNA_output.csv
+
+#Files needed for scaffolds_bar
+TopTen_M790_I9970.csv
+TopTen_M790_I9971.csv
+TopTen_M790_I9972.csv
+TopTen_M790_I9973.csv
+
+#To run feature counts:
+#Arcadia science genomes
+
+#Amanda rRNA annotated genomes
