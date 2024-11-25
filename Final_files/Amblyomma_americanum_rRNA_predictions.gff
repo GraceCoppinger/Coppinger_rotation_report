@@ -1,0 +1,365 @@
+##gff-version 3
+##By APinski (19 November 2024)
+JARKHS020000525.1	barrnap:0.9	rRNA	8201	8350	7e-23	+	.	Name=5_8S_rRNA;product=5.8S ribosomal RNA
+JARKHS020000746.1	barrnap:0.9	rRNA	6954	7063	3.3e-11	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020002075.1	barrnap:0.9	rRNA	36760	37919	1.5e-265	-	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 39 percent of the 28S ribosomal RNA
+JARKHS020002338.1	barrnap:0.9	rRNA	13780	15505	0	+	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 59 percent of the 28S ribosomal RNA
+JARKHS020002338.1	barrnap:0.9	rRNA	17605	19329	0	+	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 59 percent of the 28S ribosomal RNA
+JARKHS020002338.1	barrnap:0.9	rRNA	35174	35986	4.4e-178	+	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 27 percent of the 28S ribosomal RNA
+JARKHS020002338.1	barrnap:0.9	rRNA	41258	42978	0	+	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 59 percent of the 28S ribosomal RNA
+JARKHS020002338.1	barrnap:0.9	rRNA	48576	49736	1.4e-255	+	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 39 percent of the 28S ribosomal RNA
+JARKHS020002357.1	barrnap:0.9	rRNA	1632	3357	0	+	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 59 percent of the 28S ribosomal RNA
+JARKHS020002357.1	barrnap:0.9	rRNA	21795	23248	1.4e-197	+	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 49 percent of the 28S ribosomal RNA
+JARKHS020002819.1	barrnap:0.9	rRNA	45272	45381	1.5e-10	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020003385.1	barrnap:0.9	rRNA	50259	50392	1.8e-17	+	.	Name=5_8S_rRNA;product=5.8S ribosomal RNA
+JARKHS020003470.1	barrnap:0.9	rRNA	46036	46178	7.5e-17	-	.	Name=5_8S_rRNA;product=5.8S ribosomal RNA
+JARKHS020003734.1	barrnap:0.9	rRNA	62623	62705	1.1e-10	+	.	Name=5S_rRNA;product=5S ribosomal RNA (partial);note=aligned only 69 percent of the 5S ribosomal RNA
+JARKHS020003887.1	barrnap:0.9	rRNA	1487	1637	2.4e-25	-	.	Name=5_8S_rRNA;product=5.8S ribosomal RNA
+JARKHS020003887.1	barrnap:0.9	rRNA	2983	4772	0	-	.	Name=18S_rRNA;product=18S ribosomal RNA
+JARKHS020005564.1	barrnap:0.9	rRNA	223373	223491	1.2e-16	-	.	Name=5_8S_rRNA;product=5.8S ribosomal RNA (partial);note=aligned only 76 percent of the 5.8S ribosomal RNA
+JARKHS020006090.1	barrnap:0.9	rRNA	8050	8199	1.7e-18	-	.	Name=5_8S_rRNA;product=5.8S ribosomal RNA
+JARKHS020006090.1	barrnap:0.9	rRNA	9747	11513	0	-	.	Name=18S_rRNA;product=18S ribosomal RNA
+JARKHS020006092.1	barrnap:0.9	rRNA	43007	44222	6.6e-267	+	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 41 percent of the 28S ribosomal RNA
+JARKHS020006092.1	barrnap:0.9	rRNA	52895	54695	0	+	.	Name=18S_rRNA;product=18S ribosomal RNA
+JARKHS020007249.1	barrnap:0.9	rRNA	26172	26317	3.1e-21	+	.	Name=5_8S_rRNA;product=5.8S ribosomal RNA
+JARKHS020008340.1	barrnap:0.9	rRNA	31	139	9.6e-16	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020008344.1	barrnap:0.9	rRNA	4	100	1.3e-12	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020008344.1	barrnap:0.9	rRNA	12906	13014	1.2e-13	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020008344.1	barrnap:0.9	rRNA	13587	13696	1e-15	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020008344.1	barrnap:0.9	rRNA	14269	14377	9.6e-16	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020008344.1	barrnap:0.9	rRNA	17056	17165	1e-15	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020008344.1	barrnap:0.9	rRNA	17736	17842	4.3e-15	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020008344.1	barrnap:0.9	rRNA	23275	23384	2e-14	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020008344.1	barrnap:0.9	rRNA	23958	24066	9.6e-16	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020008344.1	barrnap:0.9	rRNA	28095	28203	1.1e-15	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020008344.1	barrnap:0.9	rRNA	29791	29899	2.3e-13	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020008344.1	barrnap:0.9	rRNA	31027	31136	7.9e-15	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020008344.1	barrnap:0.9	rRNA	31691	31799	5.9e-12	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020008369.1	barrnap:0.9	rRNA	76933	77042	2.1e-08	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020009651.1	barrnap:0.9	rRNA	6746	6849	8e-08	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020009733.1	barrnap:0.9	rRNA	21783	21889	3.3e-11	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020009861.1	barrnap:0.9	rRNA	5508	5615	9.5e-14	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020009883.1	barrnap:0.9	rRNA	11395	11539	1.9e-15	-	.	Name=5_8S_rRNA;product=5.8S ribosomal RNA
+JARKHS020010129.1	barrnap:0.9	rRNA	277	4731	0	+	.	Name=28S_rRNA;product=28S ribosomal RNA
+JARKHS020010129.1	barrnap:0.9	rRNA	281	431	2.3e-24	+	.	Name=5_8S_rRNA;product=5.8S ribosomal RNA
+JARKHS020010129.1	barrnap:0.9	rRNA	7750	8911	9.5e-255	+	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 39 percent of the 28S ribosomal RNA
+JARKHS020010166.1	barrnap:0.9	rRNA	15685	15793	3.6e-10	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020010474.1	barrnap:0.9	rRNA	9399	9505	3.5e-12	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020011081.1	barrnap:0.9	rRNA	66757	66902	5.8e-24	+	.	Name=5_8S_rRNA;product=5.8S ribosomal RNA
+JARKHS020011193.1	barrnap:0.9	rRNA	58626	58761	2.5e-13	-	.	Name=5_8S_rRNA;product=5.8S ribosomal RNA
+JARKHS020011411.1	barrnap:0.9	rRNA	835	2127	0	-	.	Name=18S_rRNA;product=18S ribosomal RNA (partial);note=aligned only 69 percent of the 18S ribosomal RNA
+JARKHS020011411.1	barrnap:0.9	rRNA	8989	9526	1.9e-120	-	.	Name=18S_rRNA;product=18S ribosomal RNA (partial);note=aligned only 28 percent of the 18S ribosomal RNA
+JARKHS020012974.1	barrnap:0.9	rRNA	202473	202593	3.6e-07	+	.	Name=5_8S_rRNA;product=5.8S ribosomal RNA (partial);note=aligned only 77 percent of the 5.8S ribosomal RNA
+JARKHS020013657.1	barrnap:0.9	rRNA	19579	19729	4.8e-25	-	.	Name=5_8S_rRNA;product=5.8S ribosomal RNA
+JARKHS020013657.1	barrnap:0.9	rRNA	21291	23104	0	-	.	Name=18S_rRNA;product=18S ribosomal RNA
+JARKHS020013657.1	barrnap:0.9	rRNA	33665	34881	1.3e-282	-	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 41 percent of the 28S ribosomal RNA
+JARKHS020013657.1	barrnap:0.9	rRNA	44405	48261	0	-	.	Name=28S_rRNA;product=28S ribosomal RNA
+JARKHS020013657.1	barrnap:0.9	rRNA	48107	48257	1.9e-25	-	.	Name=5_8S_rRNA;product=5.8S ribosomal RNA
+JARKHS020013657.1	barrnap:0.9	rRNA	49708	50783	5e-269	-	.	Name=18S_rRNA;product=18S ribosomal RNA (partial);note=aligned only 57 percent of the 18S ribosomal RNA
+JARKHS020013657.1	barrnap:0.9	rRNA	50816	51286	2.3e-107	-	.	Name=18S_rRNA;product=18S ribosomal RNA (partial);note=aligned only 25 percent of the 18S ribosomal RNA
+JARKHS020013935.1	barrnap:0.9	rRNA	53449	54668	2.2e-295	-	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 41 percent of the 28S ribosomal RNA
+JARKHS020015020.1	barrnap:0.9	rRNA	134	243	3.7e-15	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020015531.1	barrnap:0.9	rRNA	6641	8453	0	+	.	Name=18S_rRNA;product=18S ribosomal RNA
+JARKHS020015531.1	barrnap:0.9	rRNA	10012	13859	0	+	.	Name=28S_rRNA;product=28S ribosomal RNA
+JARKHS020015531.1	barrnap:0.9	rRNA	10016	10166	4.8e-25	+	.	Name=5_8S_rRNA;product=5.8S ribosomal RNA
+JARKHS020015531.1	barrnap:0.9	rRNA	17525	18744	2.2e-295	+	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 41 percent of the 28S ribosomal RNA
+JARKHS020015531.1	barrnap:0.9	rRNA	27106	28918	0	+	.	Name=18S_rRNA;product=18S ribosomal RNA
+JARKHS020015531.1	barrnap:0.9	rRNA	30362	34214	0	+	.	Name=28S_rRNA;product=28S ribosomal RNA
+JARKHS020015531.1	barrnap:0.9	rRNA	30366	30516	2.4e-23	+	.	Name=5_8S_rRNA;product=5.8S ribosomal RNA
+JARKHS020015531.1	barrnap:0.9	rRNA	33705	36816	4.5e-140	+	.	Name=28S_rRNA;product=28S ribosomal RNA
+JARKHS020015531.1	barrnap:0.9	rRNA	42751	43911	1.1e-263	+	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 39 percent of the 28S ribosomal RNA
+JARKHS020015531.1	barrnap:0.9	rRNA	52221	54033	0	+	.	Name=18S_rRNA;product=18S ribosomal RNA
+JARKHS020015531.1	barrnap:0.9	rRNA	55483	58494	0	+	.	Name=28S_rRNA;product=28S ribosomal RNA
+JARKHS020015531.1	barrnap:0.9	rRNA	55487	55637	4.8e-25	+	.	Name=5_8S_rRNA;product=5.8S ribosomal RNA
+JARKHS020015531.1	barrnap:0.9	rRNA	63911	65071	4e-263	+	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 39 percent of the 28S ribosomal RNA
+JARKHS020015531.1	barrnap:0.9	rRNA	69825	71658	0	+	.	Name=18S_rRNA;product=18S ribosomal RNA
+JARKHS020015531.1	barrnap:0.9	rRNA	72069	74783	0	+	.	Name=28S_rRNA;product=28S ribosomal RNA
+JARKHS020015531.1	barrnap:0.9	rRNA	82308	83524	1.3e-289	+	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 41 percent of the 28S ribosomal RNA
+JARKHS020015531.1	barrnap:0.9	rRNA	92964	93776	2.7e-178	+	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 27 percent of the 28S ribosomal RNA
+JARKHS020015793.1	barrnap:0.9	rRNA	261813	261920	2.6e-13	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020015793.1	barrnap:0.9	rRNA	262493	262602	1.1e-15	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020015793.1	barrnap:0.9	rRNA	263177	263285	1.1e-15	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020016967.1	barrnap:0.9	rRNA	83446	84184	1.8e-150	+	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 25 percent of the 28S ribosomal RNA
+JARKHS020017939.1	barrnap:0.9	rRNA	432098	434510	0	+	.	Name=28S_rRNA;product=28S ribosomal RNA
+JARKHS020018434.1	barrnap:0.9	rRNA	141	250	1e-15	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020018862.1	barrnap:0.9	rRNA	3423	3505	1.5e-07	-	.	Name=5S_rRNA;product=5S ribosomal RNA (partial);note=aligned only 69 percent of the 5S ribosomal RNA
+JARKHS020018942.1	barrnap:0.9	rRNA	28561	28655	3.3e-12	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020019279.1	barrnap:0.9	rRNA	22916	23779	2.8e-11	-	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 29 percent of the 28S ribosomal RNA
+JARKHS020019364.1	barrnap:0.9	rRNA	7638	11470	0	+	.	Name=28S_rRNA;product=28S ribosomal RNA
+JARKHS020019364.1	barrnap:0.9	rRNA	7642	7771	2.6e-22	+	.	Name=5_8S_rRNA;product=5.8S ribosomal RNA
+JARKHS020019364.1	barrnap:0.9	rRNA	14750	15990	1.8e-277	+	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 42 percent of the 28S ribosomal RNA
+JARKHS020019443.1	barrnap:0.9	rRNA	392706	394056	6.7e-272	+	.	Name=18S_rRNA;product=18S ribosomal RNA (partial);note=aligned only 72 percent of the 18S ribosomal RNA
+JARKHS020019926.1	barrnap:0.9	rRNA	2076	3888	0	+	.	Name=18S_rRNA;product=18S ribosomal RNA
+JARKHS020019926.1	barrnap:0.9	rRNA	5334	9149	0	+	.	Name=28S_rRNA;product=28S ribosomal RNA
+JARKHS020019926.1	barrnap:0.9	rRNA	5338	5488	4.8e-25	+	.	Name=5_8S_rRNA;product=5.8S ribosomal RNA
+JARKHS020019926.1	barrnap:0.9	rRNA	11759	12831	4.9e-103	-	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 36 percent of the 28S ribosomal RNA
+JARKHS020019926.1	barrnap:0.9	rRNA	13818	13968	4.8e-25	-	.	Name=5_8S_rRNA;product=5.8S ribosomal RNA
+JARKHS020019926.1	barrnap:0.9	rRNA	15528	17321	0	-	.	Name=18S_rRNA;product=18S ribosomal RNA
+JARKHS020020169.1	barrnap:0.9	rRNA	25355	25865	4e-108	+	.	Name=18S_rRNA;product=18S ribosomal RNA (partial);note=aligned only 27 percent of the 18S ribosomal RNA
+JARKHS020020298.1	barrnap:0.9	rRNA	42469	42553	5e-10	+	.	Name=5S_rRNA;product=5S ribosomal RNA (partial);note=aligned only 71 percent of the 5S ribosomal RNA
+JARKHS020020927.1	barrnap:0.9	rRNA	13027	13111	2e-09	-	.	Name=5S_rRNA;product=5S ribosomal RNA (partial);note=aligned only 71 percent of the 5S ribosomal RNA
+JARKHS020021209.1	barrnap:0.9	rRNA	19726	20526	1.1e-145	-	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 27 percent of the 28S ribosomal RNA
+JARKHS020021593.1	barrnap:0.9	rRNA	7987	8095	1.3e-13	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020024007.1	barrnap:0.9	rRNA	9274	10434	8.6e-261	+	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 39 percent of the 28S ribosomal RNA
+JARKHS020024007.1	barrnap:0.9	rRNA	18658	20470	0	+	.	Name=18S_rRNA;product=18S ribosomal RNA
+JARKHS020024007.1	barrnap:0.9	rRNA	22027	24845	9.6e-290	+	.	Name=28S_rRNA;product=28S ribosomal RNA
+JARKHS020024007.1	barrnap:0.9	rRNA	22031	22181	2.1e-25	+	.	Name=5_8S_rRNA;product=5.8S ribosomal RNA
+JARKHS020024007.1	barrnap:0.9	rRNA	27191	28196	3.4e-220	+	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 34 percent of the 28S ribosomal RNA
+JARKHS020024007.1	barrnap:0.9	rRNA	35605	36934	0	+	.	Name=18S_rRNA;product=18S ribosomal RNA (partial);note=aligned only 71 percent of the 18S ribosomal RNA
+JARKHS020024007.1	barrnap:0.9	rRNA	54367	55527	1.4e-260	+	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 39 percent of the 28S ribosomal RNA
+JARKHS020024007.1	barrnap:0.9	rRNA	73801	74961	2.4e-254	+	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 39 percent of the 28S ribosomal RNA
+JARKHS020024007.1	barrnap:0.9	rRNA	82761	84574	0	+	.	Name=18S_rRNA;product=18S ribosomal RNA
+JARKHS020024007.1	barrnap:0.9	rRNA	86016	89860	0	+	.	Name=28S_rRNA;product=28S ribosomal RNA
+JARKHS020024007.1	barrnap:0.9	rRNA	86020	86170	4.8e-25	+	.	Name=5_8S_rRNA;product=5.8S ribosomal RNA
+JARKHS020024856.1	barrnap:0.9	rRNA	406	515	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020024856.1	barrnap:0.9	rRNA	1092	1201	1.8e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020024856.1	barrnap:0.9	rRNA	1776	1885	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020024856.1	barrnap:0.9	rRNA	3693	3801	9.6e-16	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020024856.1	barrnap:0.9	rRNA	4376	4485	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020024856.1	barrnap:0.9	rRNA	6294	6402	9.6e-16	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020024856.1	barrnap:0.9	rRNA	6977	7086	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020024856.1	barrnap:0.9	rRNA	8894	9002	9.6e-16	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020024856.1	barrnap:0.9	rRNA	9579	9688	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020024856.1	barrnap:0.9	rRNA	10264	10373	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020024856.1	barrnap:0.9	rRNA	10948	11057	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020024856.1	barrnap:0.9	rRNA	11632	11741	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020024856.1	barrnap:0.9	rRNA	12315	12424	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020024856.1	barrnap:0.9	rRNA	13000	13109	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020024856.1	barrnap:0.9	rRNA	13684	13793	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020024856.1	barrnap:0.9	rRNA	14368	14477	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020024856.1	barrnap:0.9	rRNA	15052	15161	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020024856.1	barrnap:0.9	rRNA	16970	17078	9.6e-16	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020024856.1	barrnap:0.9	rRNA	18885	18993	9.6e-16	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020024856.1	barrnap:0.9	rRNA	20801	20909	9.6e-16	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020024856.1	barrnap:0.9	rRNA	21484	21593	1.8e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020024856.1	barrnap:0.9	rRNA	24419	24527	9.4e-16	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020024898.1	barrnap:0.9	rRNA	28492	29680	9.4e-211	-	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 40 percent of the 28S ribosomal RNA
+JARKHS020025020.1	barrnap:0.9	rRNA	124616	124704	5e-07	+	.	Name=5S_rRNA;product=5S ribosomal RNA (partial);note=aligned only 74 percent of the 5S ribosomal RNA
+JARKHS020025039.1	barrnap:0.9	rRNA	45939	46025	1.6e-09	+	.	Name=5S_rRNA;product=5S ribosomal RNA (partial);note=aligned only 73 percent of the 5S ribosomal RNA
+JARKHS020025391.1	barrnap:0.9	rRNA	11	1303	0	+	.	Name=18S_rRNA;product=18S ribosomal RNA (partial);note=aligned only 69 percent of the 18S ribosomal RNA
+JARKHS020025391.1	barrnap:0.9	rRNA	3710	6355	0	+	.	Name=28S_rRNA;product=28S ribosomal RNA
+JARKHS020025391.1	barrnap:0.9	rRNA	7261	8527	7.4e-277	+	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 43 percent of the 28S ribosomal RNA
+JARKHS020025414.1	barrnap:0.9	rRNA	9788	11508	0	+	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 59 percent of the 28S ribosomal RNA
+JARKHS020025942.1	barrnap:0.9	rRNA	34799	37502	0	+	.	Name=28S_rRNA;product=28S ribosomal RNA
+JARKHS020025943.1	barrnap:0.9	rRNA	16226	17389	2.1e-118	-	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 39 percent of the 28S ribosomal RNA
+JARKHS020025943.1	barrnap:0.9	rRNA	20112	20262	4.3e-23	-	.	Name=5_8S_rRNA;product=5.8S ribosomal RNA
+JARKHS020025943.1	barrnap:0.9	rRNA	21600	23412	0	-	.	Name=18S_rRNA;product=18S ribosomal RNA
+JARKHS020025943.1	barrnap:0.9	rRNA	30211	31370	1.8e-260	-	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 39 percent of the 28S ribosomal RNA
+JARKHS020025943.1	barrnap:0.9	rRNA	37578	41415	0	-	.	Name=28S_rRNA;product=28S ribosomal RNA
+JARKHS020025943.1	barrnap:0.9	rRNA	41261	41411	2.5e-21	-	.	Name=5_8S_rRNA;product=5.8S ribosomal RNA
+JARKHS020025943.1	barrnap:0.9	rRNA	42861	44673	0	-	.	Name=18S_rRNA;product=18S ribosomal RNA
+JARKHS020025943.1	barrnap:0.9	rRNA	54016	55176	1e-265	-	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 39 percent of the 28S ribosomal RNA
+JARKHS020025944.1	barrnap:0.9	rRNA	10991	12526	0	+	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 52 percent of the 28S ribosomal RNA
+JARKHS020026842.1	barrnap:0.9	rRNA	145466	147018	4.5e-75	-	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 53 percent of the 28S ribosomal RNA
+JARKHS020026842.1	barrnap:0.9	rRNA	146864	147014	4.8e-25	-	.	Name=5_8S_rRNA;product=5.8S ribosomal RNA
+JARKHS020026842.1	barrnap:0.9	rRNA	185007	186204	1.9e-280	-	.	Name=18S_rRNA;product=18S ribosomal RNA (partial);note=aligned only 64 percent of the 18S ribosomal RNA
+JARKHS020026842.1	barrnap:0.9	rRNA	203567	205381	0	+	.	Name=18S_rRNA;product=18S ribosomal RNA
+JARKHS020026842.1	barrnap:0.9	rRNA	206825	210656	0	+	.	Name=28S_rRNA;product=28S ribosomal RNA
+JARKHS020026842.1	barrnap:0.9	rRNA	206829	206979	8.3e-20	+	.	Name=5_8S_rRNA;product=5.8S ribosomal RNA
+JARKHS020026842.1	barrnap:0.9	rRNA	221373	222185	1.7e-175	+	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 27 percent of the 28S ribosomal RNA
+JARKHS020026842.1	barrnap:0.9	rRNA	228732	230532	0	+	.	Name=18S_rRNA;product=18S ribosomal RNA
+JARKHS020026842.1	barrnap:0.9	rRNA	231974	235809	0	+	.	Name=28S_rRNA;product=28S ribosomal RNA
+JARKHS020026842.1	barrnap:0.9	rRNA	231978	232128	2.3e-21	+	.	Name=5_8S_rRNA;product=5.8S ribosomal RNA
+JARKHS020026842.1	barrnap:0.9	rRNA	244050	244993	1.2e-277	+	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 32 percent of the 28S ribosomal RNA
+JARKHS020026842.1	barrnap:0.9	rRNA	258034	259733	0	+	.	Name=18S_rRNA;product=18S ribosomal RNA
+JARKHS020026842.1	barrnap:0.9	rRNA	261546	263254	9.4e-82	+	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 58 percent of the 28S ribosomal RNA
+JARKHS020026842.1	barrnap:0.9	rRNA	261550	261699	2.2e-22	+	.	Name=5_8S_rRNA;product=5.8S ribosomal RNA
+JARKHS020027166.1	barrnap:0.9	rRNA	1	795	2.9e-173	+	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 27 percent of the 28S ribosomal RNA
+JARKHS020027548.1	barrnap:0.9	rRNA	131144	131701	4.8e-129	-	.	Name=18S_rRNA;product=18S ribosomal RNA (partial);note=aligned only 29 percent of the 18S ribosomal RNA
+JARKHS020029335.1	barrnap:0.9	rRNA	3230	4045	5.2e-177	-	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 28 percent of the 28S ribosomal RNA
+JARKHS020030510.1	barrnap:0.9	rRNA	8068	9138	1.6e-214	+	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 36 percent of the 28S ribosomal RNA
+JARKHS020030510.1	barrnap:0.9	rRNA	18238	19654	0	+	.	Name=18S_rRNA;product=18S ribosomal RNA (partial);note=aligned only 75 percent of the 18S ribosomal RNA
+JARKHS020030510.1	barrnap:0.9	rRNA	21098	24901	0	+	.	Name=28S_rRNA;product=28S ribosomal RNA
+JARKHS020030510.1	barrnap:0.9	rRNA	21102	21252	6.4e-25	+	.	Name=5_8S_rRNA;product=5.8S ribosomal RNA
+JARKHS020030510.1	barrnap:0.9	rRNA	44964	45775	2.5e-170	+	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 27 percent of the 28S ribosomal RNA
+JARKHS020030510.1	barrnap:0.9	rRNA	55219	56972	0	+	.	Name=18S_rRNA;product=18S ribosomal RNA
+JARKHS020030510.1	barrnap:0.9	rRNA	58416	62246	0	+	.	Name=28S_rRNA;product=28S ribosomal RNA
+JARKHS020030510.1	barrnap:0.9	rRNA	58420	58570	6.5e-25	+	.	Name=5_8S_rRNA;product=5.8S ribosomal RNA
+JARKHS020030510.1	barrnap:0.9	rRNA	68478	69637	4.4e-264	+	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 39 percent of the 28S ribosomal RNA
+JARKHS020030727.1	barrnap:0.9	rRNA	21571	21680	1.1e-14	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020030727.1	barrnap:0.9	rRNA	22279	22388	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020030727.1	barrnap:0.9	rRNA	23295	23404	5.1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020031526.1	barrnap:0.9	rRNA	336891	337703	2.9e-178	+	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 27 percent of the 28S ribosomal RNA
+JARKHS020031985.1	barrnap:0.9	rRNA	1458	2270	2e-179	-	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 27 percent of the 28S ribosomal RNA
+JARKHS020031985.1	barrnap:0.9	rRNA	20258	21071	2.8e-179	-	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 27 percent of the 28S ribosomal RNA
+JARKHS020032189.1	barrnap:0.9	rRNA	156594	157411	4.3e-206	-	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 28 percent of the 28S ribosomal RNA
+JARKHS020032256.1	barrnap:0.9	rRNA	5347	6147	9.2e-146	+	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 27 percent of the 28S ribosomal RNA
+JARKHS020032444.1	barrnap:0.9	rRNA	92	201	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020032444.1	barrnap:0.9	rRNA	799	908	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020032644.1	barrnap:0.9	rRNA	108812	109355	5.1e-134	-	.	Name=18S_rRNA;product=18S ribosomal RNA (partial);note=aligned only 29 percent of the 18S ribosomal RNA
+JARKHS020032659.1	barrnap:0.9	rRNA	117128	117237	6.7e-16	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020032659.1	barrnap:0.9	rRNA	120092	120201	1.1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020033234.1	barrnap:0.9	rRNA	23818	24704	5.2e-137	-	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 30 percent of the 28S ribosomal RNA
+JARKHS020033259.1	barrnap:0.9	rRNA	11017	12743	0	+	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 59 percent of the 28S ribosomal RNA
+JARKHS020033610.1	barrnap:0.9	rRNA	231705	232178	8.2e-97	-	.	Name=18S_rRNA;product=18S ribosomal RNA (partial);note=aligned only 25 percent of the 18S ribosomal RNA
+JARKHS020033636.1	barrnap:0.9	rRNA	149414	149893	1.5e-129	+	.	Name=18S_rRNA;product=18S ribosomal RNA (partial);note=aligned only 25 percent of the 18S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	295	404	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	979	1086	2.8e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	1658	1767	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	2338	2447	7e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	3020	3129	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	3701	3810	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	4383	4492	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	5065	5174	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	5745	5854	7e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	6427	6536	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	7109	7218	9e-16	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	7791	7900	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	8472	8581	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	9156	9263	2.8e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	9835	9944	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	10515	10624	7e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	11199	11306	2.8e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	11878	11987	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	12558	12667	7e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	13240	13349	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	13921	14029	5.9e-14	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	14603	14712	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	15285	15394	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	15965	16074	7e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	16647	16756	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	17329	17438	9e-16	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	18011	18120	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	18692	18801	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	19376	19483	2.8e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	20055	20164	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	20735	20844	7e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	21419	21526	2.8e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	22098	22207	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	22778	22887	7e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	23460	23569	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	24141	24249	8.9e-14	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	24823	24932	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	25505	25614	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	26187	26296	4e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	27179	27287	2.2e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	28170	28278	2.2e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	28851	28960	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	29533	29642	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	30216	30325	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	30898	31006	1.9e-14	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	31890	31998	2.2e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	32571	32680	1.7e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	33252	33361	1e-13	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	33934	34042	5.9e-14	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	34616	34725	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	35298	35407	7e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	35980	36089	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	36661	36769	5.9e-14	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	37343	37452	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	38025	38134	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	38707	38816	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	39387	39496	7e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	40069	40178	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	40750	40858	5.9e-14	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	41432	41541	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	42424	42532	5.3e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	43105	43214	3e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	43787	43896	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	44469	44578	3.4e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	45151	45260	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	45833	45942	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	46515	46624	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	47196	47306	4.5e-16	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	47879	47988	9.7e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	48561	48670	9.7e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	49243	49352	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	49925	50034	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	50607	50716	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	51289	51398	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	51970	52079	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	52652	52761	6.3e-16	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	53334	53443	1.5e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	54016	54125	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	55008	55116	2.2e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	55690	55799	9.7e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	56369	56478	9.7e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	57361	57469	1.2e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	58042	58151	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	59034	59142	9.6e-16	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	60025	60133	2.2e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	60706	60815	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	61388	61497	9e-16	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	62380	62488	1.3e-14	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	63061	63170	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	63743	63852	9e-16	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	64734	64842	9.6e-16	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	65415	65524	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	66097	66206	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	66779	66888	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	67461	67570	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	68453	68561	2.2e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	69134	69243	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	69816	69925	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	70808	70916	2.2e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	71490	71599	9.7e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	72482	72590	9.6e-16	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	73473	73581	9.6e-16	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	74154	74263	1e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	75146	75254	9.6e-16	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	76138	76246	1.6e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	76819	76928	1.6e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	77811	77919	2.2e-15	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020034131.1	barrnap:0.9	rRNA	83397	83490	4.8e-11	+	.	Name=5S_rRNA;product=5S ribosomal RNA (partial);note=aligned only 78 percent of the 5S ribosomal RNA
+JARKHS020035207.1	barrnap:0.9	rRNA	360	469	9.1e-14	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020035207.1	barrnap:0.9	rRNA	1043	1152	6.5e-14	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020035207.1	barrnap:0.9	rRNA	1727	1836	8.3e-14	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020035207.1	barrnap:0.9	rRNA	2411	2520	9.1e-14	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020035207.1	barrnap:0.9	rRNA	3092	3201	8.2e-15	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020035207.1	barrnap:0.9	rRNA	3773	3882	6.9e-15	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020035207.1	barrnap:0.9	rRNA	4455	4564	1e-15	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020035207.1	barrnap:0.9	rRNA	5139	5248	1e-15	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020035207.1	barrnap:0.9	rRNA	5822	5931	1.6e-13	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020035207.1	barrnap:0.9	rRNA	6505	6614	1e-15	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020035207.1	barrnap:0.9	rRNA	7411	7520	9.1e-14	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020035207.1	barrnap:0.9	rRNA	8094	8203	1e-15	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020035207.1	barrnap:0.9	rRNA	8778	8887	1e-15	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020035207.1	barrnap:0.9	rRNA	9461	9570	1.4e-15	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020035207.1	barrnap:0.9	rRNA	10145	10254	6.2e-15	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020035207.1	barrnap:0.9	rRNA	10829	10938	1e-15	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020035207.1	barrnap:0.9	rRNA	11512	11621	1e-15	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020035207.1	barrnap:0.9	rRNA	12196	12305	1e-15	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020035207.1	barrnap:0.9	rRNA	12879	12988	4.2e-15	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020035207.1	barrnap:0.9	rRNA	13563	13672	1e-15	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020035207.1	barrnap:0.9	rRNA	14245	14354	1.1e-15	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020035207.1	barrnap:0.9	rRNA	14927	15036	1e-15	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020035207.1	barrnap:0.9	rRNA	15611	15720	1e-15	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020035207.1	barrnap:0.9	rRNA	16294	16403	1e-15	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020035207.1	barrnap:0.9	rRNA	16978	17087	1e-15	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020035207.1	barrnap:0.9	rRNA	18103	18212	5.3e-16	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020035207.1	barrnap:0.9	rRNA	19006	19115	2.8e-14	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020035207.1	barrnap:0.9	rRNA	19910	20019	1e-15	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020035207.1	barrnap:0.9	rRNA	20594	20703	5.3e-16	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020035207.1	barrnap:0.9	rRNA	21496	21605	1.5e-15	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020035207.1	barrnap:0.9	rRNA	22399	22508	2.8e-14	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020035207.1	barrnap:0.9	rRNA	23304	23413	1e-15	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020035207.1	barrnap:0.9	rRNA	23988	24097	5.3e-16	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020035207.1	barrnap:0.9	rRNA	24896	25004	3.9e-15	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020035207.1	barrnap:0.9	rRNA	25800	25906	3.1e-15	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020035207.1	barrnap:0.9	rRNA	31351	31460	7.6e-16	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020035207.1	barrnap:0.9	rRNA	43455	43562	2.8e-15	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020035207.1	barrnap:0.9	rRNA	45178	45287	1e-15	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020035207.1	barrnap:0.9	rRNA	46081	46189	4.3e-14	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020035207.1	barrnap:0.9	rRNA	48693	48801	4.5e-13	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020035207.1	barrnap:0.9	rRNA	50158	50266	1.2e-12	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020035384.1	barrnap:0.9	rRNA	56152	56261	8.1e-13	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+JARKHS020035581.1	barrnap:0.9	rRNA	13403	14218	2.8e-178	-	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 28 percent of the 28S ribosomal RNA
+JARKHS020035581.1	barrnap:0.9	rRNA	34652	38500	0	-	.	Name=28S_rRNA;product=28S ribosomal RNA
+JARKHS020035581.1	barrnap:0.9	rRNA	38346	38496	3.7e-23	-	.	Name=5_8S_rRNA;product=5.8S ribosomal RNA
+JARKHS020035581.1	barrnap:0.9	rRNA	40050	41860	0	-	.	Name=18S_rRNA;product=18S ribosomal RNA
+JARKHS020035581.1	barrnap:0.9	rRNA	50883	52686	0	+	.	Name=18S_rRNA;product=18S ribosomal RNA
+JARKHS020035581.1	barrnap:0.9	rRNA	54243	58087	0	+	.	Name=28S_rRNA;product=28S ribosomal RNA
+JARKHS020035581.1	barrnap:0.9	rRNA	54247	54397	3e-25	+	.	Name=5_8S_rRNA;product=5.8S ribosomal RNA
+JARKHS020035686.1	barrnap:0.9	rRNA	2695	3914	3.2e-289	+	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 41 percent of the 28S ribosomal RNA
+JARKHS020035686.1	barrnap:0.9	rRNA	13720	15529	0	+	.	Name=18S_rRNA;product=18S ribosomal RNA
+JARKHS020035711.1	barrnap:0.9	rRNA	7397	8209	2.1e-179	-	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 27 percent of the 28S ribosomal RNA
+JARKHS020035779.1	barrnap:0.9	rRNA	2389	3201	2.2e-177	+	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 27 percent of the 28S ribosomal RNA
+JARKHS020035779.1	barrnap:0.9	rRNA	8546	10272	0	+	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 59 percent of the 28S ribosomal RNA
+JARKHS020035779.1	barrnap:0.9	rRNA	32058	32981	3.8e-198	+	.	Name=18S_rRNA;product=18S ribosomal RNA (partial);note=aligned only 49 percent of the 18S ribosomal RNA
+JARKHS020035779.1	barrnap:0.9	rRNA	33986	37835	0	+	.	Name=28S_rRNA;product=28S ribosomal RNA
+JARKHS020035779.1	barrnap:0.9	rRNA	33990	34140	4.8e-25	+	.	Name=5_8S_rRNA;product=5.8S ribosomal RNA
+JARKHS020035779.1	barrnap:0.9	rRNA	49892	51051	3.4e-259	-	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 39 percent of the 28S ribosomal RNA
+JARKHS020035812.1	barrnap:0.9	rRNA	117314	117402	2e-07	+	.	Name=5S_rRNA;product=5S ribosomal RNA (partial);note=aligned only 74 percent of the 5S ribosomal RNA
+JARKHS020035873.1	barrnap:0.9	rRNA	14274	15999	0	+	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 59 percent of the 28S ribosomal RNA
+JARKHS020035873.1	barrnap:0.9	rRNA	23572	24732	1.2e-265	+	.	Name=28S_rRNA;product=28S ribosomal RNA (partial);note=aligned only 39 percent of the 28S ribosomal RNA
+JARKHS020036797.1	barrnap:0.9	rRNA	697833	698408	5.6e-77	-	.	Name=18S_rRNA;product=18S ribosomal RNA (partial);note=aligned only 30 percent of the 18S ribosomal RNA
