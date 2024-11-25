@@ -7,36 +7,20 @@ conda install bioconda::subread
 #Make our script
 nano featurecounts.sh
 
-#!/bin/bash
-#Per sample run the following
-featureCounts -a PATH/TO/GENOME/GTF/FILE/FROM/NCBI -o Name_for_featurecounts_output_file.txt You_bam_file_conversion_from_samtools.bam
-
-
-#Feature counts example
+########################################################################################################################################################################
 #!/bin/bash
 #S2
-featureCounts -T 8 -t gene -g gene_id -p --countPairedReads -a /mnt/pathogen2/gcoppinger/Amblyomma_americanum_genome/Amblyomma_americanum.gtf -o M790_I9970_RNA_Tickpool_216_S2_output.txt M790_I9970_RNA_Tickpool_216_S2.bam
-featureCounts -T 8 -t gene -g gene_id -p --countReadPairs -s 2 -a /mnt/pathogen2/gcoppinger/Amblyomma_americanum_genome/Amblyomma_americanum.gtf -o M790_I9970_RNA_Tickpool_216_S2_output.txt M790_I9970_RNA_Tickpool_216_S2.bam
-
+featureCounts -T 8 -O -M -F GFF -p -t gene,exon,CDS -g ID -s 0 -a /mnt/pathogen2/gcoppinger/Amblyomma_americanum_genome/Amblyomma_americanum.gff -o M790_I9970_RNA_Tickpool_216_S2_output.txt /mnt/pathogen2/gcoppinger/03_HiSat2_pool/M790_I9970.bam
 #S3
-featureCounts -a /mnt/pathogen2/gcoppinger/Amblyomma_americanum_genome/Amblyomma_americanum.gtf -o M790_I9971_RNA_Tickpool_280_S3_output.txt /mnt/pathogen2/gcoppinger/03_HiSat2_pool/M790_I9971_RNA_Tickpool_280_S3.bam
+featureCounts -T 8 -O -M -F GFF -p -t gene,exon,CDS -g ID -s 0 -a /mnt/pathogen2/gcoppinger/Amblyomma_americanum_genome/Amblyomma_americanum.gtf -o M790_I9971_RNA_Tickpool_280_S3_output.txt /mnt/pathogen2/gcoppinger/03_HiSat2_pool/M790_I9971.bam
 #S4
-featureCounts -a /mnt/pathogen2/gcoppinger/Amblyomma_americanum_genome/Amblyomma_americanum.gtf -o M790_I9972_RNA_Tickpool_287_S4_output.txt /mnt/pathogen2/gcoppinger/03_HiSat2_pool/M790_I9972_RNA_Tickpool_287_S4.bam
+featureCounts -T 8 -O -M -F GFF -p -t gene,exon,CDS -g ID -s 0 -a /mnt/pathogen2/gcoppinger/Amblyomma_americanum_genome/Amblyomma_americanum.gtf -o M790_I9972_RNA_Tickpool_287_S4_output.txt /mnt/pathogen2/gcoppinger/03_HiSat2_pool/M790_I9972.bam
 #S5
-featureCounts -a /mnt/pathogen2/gcoppinger/Amblyomma_americanum_genome/Amblyomma_americanum.gtf -o M790_I9973_RNA_Tickpool_311_S5_output.txt /mnt/pathogen2/gcoppinger/03_HiSat2_pool/M790_I9973_RNA_Tickpool_311_S5.bam
+featureCounts -T 8 -O -M -F GFF -p -t gene,exon,CDS -g ID -s 0 -a /mnt/pathogen2/gcoppinger/Amblyomma_americanum_genome/Amblyomma_americanum.gtf -o M790_I9973_RNA_Tickpool_311_S5_output.txt /mnt/pathogen2/gcoppinger/03_HiSat2_pool/M790_I9973.bam
+########################################################################################################################################################################
 
+The above code will only count the protien coding genes. This is because the genome annotated by arcadia sciene did not annotate the rRNA. 
+All of the rRNA (90% of your sequences) will be identified as no features.
 
-Play around with the parameters
-Why feature counts not finding the features? -Try and use the gff file instead of gtf
-
-Some niche parameter for hisat2?
-
-Rerun bam file:
-samtools view -S -b M790_I9970_RNA_Tickpool_216_S2.bam | samtools sort > test.bam
-samtools index test.bam test.bam.bai
-
-Make some line and histograms
-
-
-Current working feature counts:
-featureCounts -T 8 -O -M -F GFF -p -t gene,exon,CDS -g ID -s 0 -a /mnt/pathogen2/gcoppinger/Amblyomma_americanum_genome/Amblyomma_americanum.gff -o M790_I9970_RNA_Tickpool_216_S2_output.txt /mnt/pathogen2/gcoppinger/03_HiSat2_pool/M790_I9970_RNA_Tickpool_216_S2_sort.bam
+Thank you to Amanda Pinski for creating the following .gff file with annotated rRNA 
+#Run feature counts again but this time with the .gff annotated file from Amanda to quantify rRNA content.
