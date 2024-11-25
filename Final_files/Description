@@ -12,5 +12,13 @@ TopTen_M790_I9973.csv
 
 #To run feature counts:
 #Arcadia science genomes
+Amblyomma_americanum.gff
 
 #Amanda rRNA annotated genomes
+Amblyomma_americanum_rRNA_predictions.gff
+
+#Files used for IGV
+Amblyomma_americanum.fna
+Amblyomma_americanum.fna.fai
+JARKHS020015531_scaffold.fasta
+M790_I9970_RNA_Tickpool_216_S2_sort.bam
